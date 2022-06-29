@@ -1,0 +1,11 @@
+$minWidth: 1366px;
+$minHeight: 768px;
+// 基准宽度
+$width: 1920;
+$height: 1080;
+@function px2vw($vw) { 
+    @return ($vw/$width)*100 + vw; 
+}
+@function px2vh($vh) {
+    @return ($vh/$height)*100 + vh;
+}

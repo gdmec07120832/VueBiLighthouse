@@ -1,0 +1,55 @@
+.introjs-helperLayer {
+  box-shadow: rgba(33, 33, 33, 0.8) 0 0 0 0, rgba(33, 33, 33, 0.5) 0 0 0 5000px!important;
+}
+
+.introjs-tooltip-header {
+  padding-top: 4px;
+}
+
+.introjs-tooltip-title {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;
+}
+
+.introjs-tooltiptext {
+  font-size: 12px;
+  padding: 10px 20px 0;
+}
+
+.introjs-skipbutton {
+  display: none;
+}
+.introjs-tooltip {
+  width: 305px;
+  max-width: 305px;
+}
+
+.introjs-bullets ul li a.active {
+  width: 6px;
+}
+.introjs-bullets ul li a {
+  width: 6px!important;
+  user-select: none;
+}
+.introjs-bullets ul li {
+  pointer-events: auto;
+  cursor: pointer;
+  &:hover a{
+    background: #999;
+  }
+}
+.introjs-bullets ul li a {
+  pointer-events: none;
+}
+
+
+.introjs-bullets ul li a:hover {
+}
+
+.introjs-bullets {
+  bottom: 5px;
+  left: 20px;
+  position: absolute;
+  //pointer-events: none;
+}

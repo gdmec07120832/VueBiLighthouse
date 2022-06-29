@@ -1,0 +1,180 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.flex-between {
+  @extend .flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  @extend .flex;
+  justify-content: space-around;
+}
+
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+}
+
+.flex-start {
+  @extend .flex;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  @extend .flex;
+  justify-content: flex-end;
+}
+
+$size: 2 5 10 15 20;
+
+@each $n in $size {
+  .py#{$n} {
+    padding-top: $n * 1px;
+    padding-bottom: $n * 1px;
+  }
+  .px#{$n} {
+    padding-left: $n * 1px;
+    padding-right: $n * 1px;
+  }
+  .pt#{$n} {
+    padding-top: $n * 1px;
+  }
+  .pb#{$n} {
+    padding-bottom: $n * 1px;
+  }
+  .pl#{$n} {
+    padding-left: $n * 1px;
+  }
+  .pr#{$n} {
+    padding-right: $n * 1px;
+  }
+
+  .my#{$n} {
+    margin-top: $n * 1px;
+    margin-bottom: $n * 1px;
+  }
+  .mx#{$n} {
+    margin-left: $n * 1px;
+    margin-right: $n * 1px;
+  }
+  .mt#{$n} {
+    margin-top: $n * 1px;
+  }
+  .mb#{$n} {
+    margin-bottom: $n * 1px;
+  }
+  .ml#{$n} {
+    margin-left: $n * 1px;
+  }
+  .mr#{$n} {
+    margin-right: $n * 1px;
+  }
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gary {
+  color: #bbbbbb;
+}
+
+.text-black {
+  color: rgba(0, 0, 0, .65);
+}
+
+.text-red {
+  color: #ff5953!important;
+}
+
+.text-green {
+  color: #00a854!important;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-lg {
+  font-size: 16px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-xxl {
+  font-size: 24px;
+}
+
+.block {
+  display: block;
+}
+
+.chart-sub-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #343437;
+  font-weight: bold;
+  position: relative;
+}
+
+.light-tooltip-select {
+  padding-top: 0;
+  max-width: 400px;
+  overflow-y: hidden;
+
+  .ant-tooltip-arrow {
+    display: none;
+  }
+
+  .ant-checkbox-wrapper {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .ant-tooltip-inner {
+    background: #fff;
+    padding: 0;
+    border: 1px solid #e4e4e4;
+  }
+}
+
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+// 主题色
+$theme: #079909;
+// echarts 线色
+$chartColor: #5A8DF3;
+// 大于同比
+$rise: #FF1E10;
+// 小于同比
+$fall: #079909;

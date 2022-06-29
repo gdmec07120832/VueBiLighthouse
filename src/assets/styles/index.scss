@@ -1,0 +1,89 @@
+@import "reset";
+@import "common";
+@font-face {
+  font-family: 'fzxs12';
+  src: url('../fonts/fzxs12.ttf') format('truetype');
+}
+.ant-menu.ant-motion-collapse-legacy-active {
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out !important;
+}
+
+.ant-menu-submenu > .ant-menu {
+  background: #e6e6e6 !important;
+}
+
+.light-tooltip {
+  padding-top: 0;
+  max-width: 400px;
+
+  .ant-tooltip-inner {
+    background: #fff;
+  }
+
+  .ant-tooltip-arrow {
+    display: none;
+  }
+
+  .ant-checkbox-wrapper {
+    font-size: 12px;
+  }
+
+  .ant-radio-wrapper {
+    font-size: 12px;
+  }
+}
+
+
+body {
+  color: rgba(0, 0, 0, 1);
+  overflow-x: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft Yahei', Helvetica, Arial, sans-serif;
+}
+
+
+.echarts {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.vm--overlay {
+  background: rgba(0, 0, 0, .6) !important;
+}
+
+.release-modal {
+  box-shadow: none !important;
+  background: initial !important;
+}
+
+
+.custom-info-notification {
+  width: 450px;
+  z-index: 9999;
+  margin-left: -50px;
+  border-radius: 8px;
+  padding: 0;
+  .ant-notification-notice-message {
+    line-height: 50px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: url("~@/assets/images/notification-icon.png") 20px center/24px 24px no-repeat,  #46BCA0;
+    padding-left: 52px;
+  }
+
+  .ant-notification-notice-description {
+    padding: 16px 40px 40px;
+    min-height: 100px;
+    background: url("~@/assets/images/notification-bg.png") right bottom/100px 100px no-repeat;
+    white-space: pre-wrap;
+  }
+
+  .ant-notification-notice-close {
+    color: #fff;
+  }
+}
+
+.ant-transfer-customize-list .ant-transfer-list-body-customize-wrapper {
+  padding: 0;
+}

@@ -1,0 +1,157 @@
+@import "@/assets/styles/utils.scss";
+.sectionTitle {
+  position: relative;
+  z-index: 10;
+  height: vh(40);
+  font-size: vw(20);
+  font-weight: bold;
+  color: #DFEEF3;
+  padding-left: vw(35);
+  padding-top: vh(2);
+  background: url("~@/views/BIView/DataV/TmallScreen/images/section-title-bg.png") no-repeat left top/100% 100%;
+  .date {
+    position: absolute;
+    right: vw(25);
+    top: vw(8);
+    font-weight: 600;
+    font-size: 13px;
+    color: rgba(255, 255, 255, .8);
+  }
+}
+
+.sectionContent {
+  height: vh(400);
+  position: relative;
+  z-index: 1;
+  margin-top: vh(-6);
+  padding: vh(10) vw(10);
+  background: url("~@/views/BIView/DataV/TmallScreen/images/section-bg.png") no-repeat left top/cover;
+  &.sectionContent1 {
+    height: vh(460);
+  }
+  &.sectionContent2 {
+    height: vh(410);
+  }
+}
+
+.sectionSubTitle {
+  font-size: vw(16);
+  font-weight: 600;
+  color: #FFFFFF;
+  height: vh(30);
+  line-height: vh(30);
+  padding-left: vw(25);
+  background: url("~@/views/BIView/DataV/TmallScreen/images/sub-title-bg.png") no-repeat left top/contain;
+  &.subTitle1 {
+    margin-top: vh(20);
+  }
+  &.subTitle2 {
+    margin-top: vh(10);
+    margin-bottom: vh(10);
+  }
+}
+
+.circleChartsWrapper {
+  position: relative;
+  height: vh(152);
+  margin-top: vh(10);
+  margin-bottom: vh(10);
+  border: 1px solid #034976;
+  .cornerDec {
+    position: absolute;
+    width: vw(20);
+    height: vh(20);
+    border: 2px solid #FE611B;
+    &.cornerA {
+      left: 0;
+      top: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    &.cornerB {
+      top: 0;
+      right: 0;
+      border-left: 0;
+      border-bottom: 0;
+    }
+    &.cornerC {
+      bottom: 0;
+      right: 0;
+      border-top: 0;
+      border-left: 0;
+    }
+    &.cornerD {
+      bottom: 0;
+      left: 0;
+      border-top: 0;
+      border-right: 0;
+    }
+  }
+  .splitLine {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: vh(80);
+    width: 1px;
+    background: #158DFF;
+    border-radius: 50%;
+  }
+  .circleChartsInner {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: vh(10) vw(10);
+    .circleChartsInnerLeft, .circleChartsInnerRight {
+      flex: 1;
+    }
+    .circleChartsTitle {
+      position: relative;
+      font-size: vw(13);
+      padding-left: vw(20);
+      font-weight: 600;
+      color: #FFFFFF;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 18px;
+        background: #00FFFF;
+        border-radius: 2px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .circleChartsInnerContent {
+      display: flex;
+      height: vh(100);
+      .circleChartsInnerContent__left {
+        flex: 1;
+      }
+      .circleChartsInnerContent__right {
+        flex: 1;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: vh(10);
+        .contentText {
+          color: #fff;
+          margin-right: vw(10);
+        }
+        .contentValue {
+          color: #FFE400;
+        }
+      }
+    }
+  }
+}
+
+.echartsLine {
+  height: vh(230);
+}

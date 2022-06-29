@@ -1,0 +1,25 @@
+/deep/ .dashboard-common-table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+    text-align: center;
+    tr {
+        &:first-child {
+            background: #f5f7ff !important;
+            color: #808492;
+        }
+
+        &:nth-child(2n+1) {
+            background: #fcfcff;
+        }
+
+        td {
+            border: 1px solid #e7e9f0;
+
+            &:first-child {
+                text-align: center;
+                color: #808492;
+            }
+        }
+    }
+}

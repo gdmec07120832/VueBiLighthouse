@@ -1,0 +1,15 @@
+$red: #ff5953;
+$green: #00a854;
+/deep/ .custom-checkbox-label{
+    line-height: 30px;
+}
+/deep/ .custom-checkbox-label:before{
+    margin-top: 8px;
+}
+/deep/ .custom-checkbox-label:after{
+    top: 10px;
+}
+/deep/ .select-container .flex-start:nth-child(1) span:nth-child(1) {
+    font-size: 14px!important;
+    color: rgba(0,0,0,0.65)
+}
